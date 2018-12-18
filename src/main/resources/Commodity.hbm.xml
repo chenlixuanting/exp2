@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.guet.edu.web.pojo.Commodity">
+        <id name="commodityId">
+            <generator class="uuid"/>
+        </id>
+        <timestamp name="updateTime" access="field"/>
+        <property name="number" type="int"/>
+        <property name="price" type="double"/>
+        <property name="description" type="string"/>
+        <property name="createTime" type="timestamp"/>
+    </class>
+</hibernate-mapping>
+
+
