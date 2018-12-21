@@ -3,8 +3,8 @@
 <head>
     <title>商品查询页面</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/bootstrap-table.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-table.css">
 </head>
 <body>
     <div class="container-fluid">
@@ -13,10 +13,10 @@
         </div>
     </div>
 </body>
-<script src="../js/jquery-3.3.1.js"></script>
-<script src="../js/bootstrap.js"></script>
-<script src="../js/bootstrap-table.js"></script>
-<script src="../js/bootstrap-table-zh-CN.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap-table.js"></script>
+<script src="js/bootstrap-table-zh-CN.js"></script>
 <script>
     $('#commodityTable').bootstrapTable({
 
@@ -67,21 +67,21 @@
         columns: [{
             checkbox: true
         },{
-            field: 'commodityId',
-            title: '主键',
+            field: 'name',
+            title: '商品名称',
+            width:'30%'
+        }, {
+            field: 'price',
+            title: '商品价格',
             width:'20%'
         }, {
             field: 'number',
-            title: '库存',
+            title: '商品库存',
             width:'20%'
-        }, {
-            field: 'description',
-            title: '描述',
-            width:'40%'
         }, {
             field: 'createTime',
             title: '产生时间',
-            width:'20%',
+            width:'30%',
             formatter: dateFormatter
         }]
     });

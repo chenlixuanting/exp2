@@ -21,15 +21,14 @@ public class Commodity implements Serializable{
     private Integer number;
 
     /**
-     * 库存
+     * 价格
      */
     private Double price;
 
-
     /**
-     * 描述
+     * 名称
      */
-    private String description;
+    private String name;
 
     /**
      * 记录产生的时间
@@ -40,6 +39,14 @@ public class Commodity implements Serializable{
      * 实现乐观锁
      */
     private Timestamp updateTime;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public String getCommodityId() {
         return commodityId;
@@ -63,14 +70,6 @@ public class Commodity implements Serializable{
 
     public void setPrice(Double price) {
         this.price = price;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public Timestamp getCreateTime() {

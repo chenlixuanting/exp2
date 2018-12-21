@@ -16,7 +16,7 @@ import java.util.List;
  * 商品信息查询
  * @author Administrator
  */
-@WebServlet("/jsp/commodity/query")
+@WebServlet("/commodity/query")
 public class UserController extends HttpServlet{
 
     private UserService userService = new UserService();

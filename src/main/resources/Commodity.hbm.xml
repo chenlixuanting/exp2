@@ -10,7 +10,7 @@
         <timestamp name="updateTime" access="field"/>
         <property name="number" type="int"/>
         <property name="price" type="double"/>
-        <property name="description" type="string"/>
+        <property name="name" type="string"/>
         <property name="createTime" type="timestamp"/>
     </class>
 </hibernate-mapping>

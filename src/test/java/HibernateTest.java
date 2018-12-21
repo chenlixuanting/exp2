@@ -15,7 +15,7 @@ public class HibernateTest {
             Commodity commodity = new Commodity();
             commodity.setNumber(x);
             commodity.setPrice((double)x);
-            commodity.setDescription("蒸鱼"+x);
+            commodity.setName("蒸鱼"+x);
             commodity.setCreateTime(new Timestamp(System.currentTimeMillis()));
             userService.saveCommodity(commodity);
         }
